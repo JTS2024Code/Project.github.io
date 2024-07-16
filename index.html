@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe Cards with Stickers</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .swiper-container {
+            width: 90%;
+            max-width: 400px;
+            height: 80%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+        }
+        .sticker {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            animation: float 2s infinite;
+        }
+        .message {
+            margin-top: 10px;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Repeat this block for each card -->
+            <div class="swiper-slide">
+                <img src="Images//sticker 1" alt="Sticker 1" class="sticker">
+                <div class="message">1</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker2.png" alt="Sticker 2" class="sticker">
+                <div class="message">Message 2</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker3.png" alt="Sticker 3" class="sticker">
+                <div class="message">Message 3</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker4.png" alt="Sticker 4" class="sticker">
+                <div class="message">Message 4</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker5.png" alt="Sticker 5" class="sticker">
+                <div class="message">Message 5</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker6.png" alt="Sticker 6" class="sticker">
+                <div class="message">Message 6</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker7.png" alt="Sticker 7" class="sticker">
+                <div class="message">Message 7</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker8.png" alt="Sticker 8" class="sticker">
+                <div class="message">Message 8</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker9.png" alt="Sticker 9" class="sticker">
+                <div class="message">Message 9</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker10.png" alt="Sticker 10" class="sticker">
+                <div class="message">Message 10</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker11.png" alt="Sticker 11" class="sticker">
+                <div class="message">Message 11</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker12.png" alt="Sticker 12" class="sticker">
+                <div class="message">Message 12</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker13.png" alt="Sticker 13" class="sticker">
+                <div class="message">Message 13</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker14.png" alt="Sticker 14" class="sticker">
+                <div class="message">Message 14</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker15.png" alt="Sticker 15" class="sticker">
+                <div class="message">Message 15</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker16.png" alt="Sticker 16" class="sticker">
+                <div class="message">Message 16</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker17.png" alt="Sticker 17" class="sticker">
+                <div class="message">Message 17</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker18.png" alt="Sticker 18" class="sticker">
+                <div class="message">Message 18</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker19.png" alt="Sticker 19" class="sticker">
+                <div class="message">Message 19</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="sticker20.png" alt="Sticker 20" class="sticker">
+                <div class="message">Message 20</div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
